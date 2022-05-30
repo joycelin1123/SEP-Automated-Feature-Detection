@@ -6,8 +6,9 @@ This repository contains code to detect features using SEP (Sextractor in Python
 - Matplotlib (For plotting mechanisms)
 - Astropy    (To handle FITS file)
 - SEP        (Available at https://github.com/kbarbary/sep)
+- ptmatch    (Available at https://github.com/ntessore/imagemap)
 
-The codes use an FITS data file as an example. The dataset is hst_10325_c7_acs_wfc_f475w and you can download it via Hubble Legacy Archive (Proposal ID: 10325, PI: Ford, Visit num: c7). 
+The codes use an FITS data file as an example. The dataset is "hst_10325_c7_acs_wfc_f475w.fits" and you can download it via Hubble Legacy Archive (Proposal ID: 10325, PI: Ford, Visit num: c7). 
 
 ## Contents:
 -   [**`sep_bkg_rms.py`**] - calculates the background and rms value of an image
@@ -143,5 +144,4 @@ Optional Inputs:
 Output: 
 - a plot of the selected image with red ellipses plotted around each SEP detected object (magenta point: center point, blue point: peak point)
 - printed statements of information of each detected object in the plot (order: (peak, adjPeak, center, adjCenter) where adj stands for adjusted to the actual location in the data array)
-
 
