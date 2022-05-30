@@ -7,9 +7,9 @@ locL = [0, 1, 2, 3, 4, 5, 6, 7]
 
 # list of locations on x-axis for labels 
 # I set this equal to locL because each label corresponded directly to each errorbar
-x_axisL = locL
+x_ticksL = locL
 # list of x-axis labels 
-x_ticksL = ["A", "B", "C", "D", "E", "F", "G", "H"]
+x_labelsL = ["A", "B", "C", "D", "E", "F", "G", "H"]
 
 # list of image names 
 im_nameL = ["Image 1", "Image 2", "Image 3", "Image 4", "Image 5"]
@@ -71,5 +71,5 @@ for im in range(len(im_nameL)):
         plt.plot(loc, j_mL[im], "r*", fillstyle = "none")
 
     # plot the xticks and then show 
-    plt.xticks(locL, x_ticksL, fontsize = 10)
+    plt.xticks(x_ticksL, x_labelsL, fontsize = 10)
     plt.show()
