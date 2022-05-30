@@ -1,4 +1,4 @@
-# SEP-Automated-Feature-Detection
+# SEP Automated Feature Detection
 This repository contains code to detect features using SEP (Sextractor in Python)
 
 # Required packages
