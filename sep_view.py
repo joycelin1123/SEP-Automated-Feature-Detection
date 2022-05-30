@@ -1,4 +1,6 @@
 
+# Run this code first to see what this plot looks like and what is outputted in the terminal
+
 # get the fits info (CHANGE THIS)
 filename = "hst_10325_c7_acs_wfc_f475w_drz.fits"
 
