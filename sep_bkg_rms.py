@@ -2,7 +2,7 @@
 # This example is for Images 1,2,3,4,5 of CL0024
 
 # get the fits info
-filename = "hst_data/CL0024_data/hst_10325_c7_acs_wfc_f475w_drz.fits"
+filename = "hst_10325_c7_acs_wfc_f475w_drz.fits"
 
 # Image names (e.g. Image A, Image B, Image C)
 imL = ["Image 1", "Image 2", "Image 3", "Image 4", "Image 5"]
