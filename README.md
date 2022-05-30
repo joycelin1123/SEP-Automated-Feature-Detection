@@ -16,9 +16,10 @@ The codes use an FITS data file as an example. The dataset is hst_10325_c7_acs_w
 -   [**`sep_graphs_location.py`**] - plots the location of each detected object over two plots, x1 and x2
 -   [**`sep_j_graphs.py`**] -  plots all of the j values on one plot
 -   [**`sep_3D_location.py`**] - a 3D version of sep_graphs_location.py
--   [**`sep_view.py`**] - a tool to look at the image at a single n_I
+-   [**`sep_view.py`**] - a tool to look at the image at a single $n_I$
 
 # Manual
 
 ### sep_bkg_rms.py
+
 
