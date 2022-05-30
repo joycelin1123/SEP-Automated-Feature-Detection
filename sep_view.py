@@ -1,6 +1,6 @@
 
 # get the fits info (CHANGE THIS)
-filename = "hst_data/CL0024_data/hst_10325_c7_acs_wfc_f475w_drz.fits"
+filename = "hst_10325_c7_acs_wfc_f475w_drz.fits"
 
 # write down the image names in order (CHANGE THIS)
 imL = ["Image 1", "Image 2", "Image 3", "Image 4", "Image 5"]
