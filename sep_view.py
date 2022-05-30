@@ -1,27 +1,27 @@
 
 # get the fits info (CHANGE THIS)
-filename = "hst_data/HO_data/hst_13671_1r_acs_wfc_f814w_drz.fits"
+filename = "hst_data/CL0024_data/hst_10325_c7_acs_wfc_f475w_drz.fits"
 
 # write down the image names in order (CHANGE THIS)
-imL = ["Image 1", "Image 2", "Image 3"]
+imL = ["Image 1", "Image 2", "Image 3", "Image 4", "Image 5"]
 
 # row and column lists (CHANGE THIS)
-rowL = [(2377, 2505), (2487, 2615), (2851, 2979)]
-colL = [(1397, 1525), (1397, 1525), (1495, 1623)]
+rowL = [(1637, 1765), (1765, 1893), (2149, 2277), (2405, 2533), (2149, 2277)]
+colL = [(1535, 1663), (1407, 1535), (1279, 1407), (2283, 2411), (2057, 2185)]
 
 # OPTIONAL - color limit for each image (set True if you want to manually set the color limit otherwise set False)
 clim_bool = True
-climL = [(0.06,0.45), (0.05,0.45), (0.05,0.35)]
+climL = [(0.03,0.182), (0.038,0.13), (0.038,0.16), (0.03,0.195), (0.035,0.155)]
 
 # get the background and rms values for each image (CHANGE THIS)
-bkgL = [0.08830491453409195, 0.09041831642389297, 0.08830925822257996]
-rmsL = [0.00965715292841196, 0.0092260567471385, 0.008933251723647118]
+bkgL = [0.04627720266580582, 0.046375613659620285, 0.04566671699285507, 0.04507363587617874, 0.04775523394346237]
+rmsL = [0.00323042762465775, 0.0031234666239470243, 0.003028792329132557, 0.0035166656598448753, 0.0033184518106281757]
 
 # parameters (CHANGE THIS)
 # num is the index of the image (Note: lists start at index 0)
 # n : referred to n_I in the paper
-num = 2
-n = 3
+num = 0
+n = 7
 deblend_num = 0.005
 
 ### DO NOT EDIT ANYTHING BELOW THIS LINE ###
