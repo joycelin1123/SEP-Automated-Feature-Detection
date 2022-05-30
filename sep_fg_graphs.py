@@ -6,9 +6,9 @@
 locL = [0, 1, 2, 2.825, 3.175, 3.825, 4.175, 4.825, 5.175, 5.825, 6.175, 6.825, 7.175]
 
 # list of locations on x-axis for labels (CHANGE THIS)
-x_axisL = [0, 1, 2, 3, 4, 5, 6, 7]
+x_ticksL = [0, 1, 2, 3, 4, 5, 6, 7]
 # list of x-axis labels (CHANGE THIS)
-x_ticksL = ["A", "B", "C", "D", "E", "F", "G", "H"]
+x_labelsL = ["A", "B", "C", "D", "E", "F", "G", "H"]
 
 # list of image names (CHANGE THIS)
 im_nameL = ["Image 1", "Image 2", "Image 3"]
@@ -66,16 +66,16 @@ for im in range(len(im_nameL)):
     ax3 = axes[2]
 
     ax1.set_title("f values")
-    ax1.set_xticks(x_axisL)
-    ax1.set_xticklabels(x_ticksL, fontsize = 10)
+    ax1.set_xticks(x_ticksL)
+    ax1.set_xticklabels(x_labelsL, fontsize = 10)
 
     ax2.set_title("$g_1$ values")
-    ax2.set_xticks(x_axisL)
-    ax2.set_xticklabels(x_ticksL, fontsize = 10)
+    ax2.set_xticks(x_ticksL)
+    ax2.set_xticklabels(x_labelsL, fontsize = 10)
 
     ax3.set_title("$g_2$ values")
-    ax3.set_xticks(x_axisL)
-    ax3.set_xticklabels(x_ticksL, fontsize = 10)
+    ax3.set_xticks(x_ticksL)
+    ax3.set_xticklabels(x_labelsL, fontsize = 10)
 
     ax1.tick_params(axis='y', labelsize= 8)
     ax2.tick_params(axis='y', labelsize= 8)
