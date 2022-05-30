@@ -1,26 +1,26 @@
 
-# This example is for Images 1,2,3 of Hamilton's Object
+# This example is for Images 1,2,3,4,5 of CL0024
 
 # get the fits info
-filename = "hst_data/HO_data/hst_13671_1r_acs_wfc_f814w_drz.fits"
+filename = "hst_data/CL0024_data/hst_10325_c7_acs_wfc_f475w_drz.fits"
 
 # Image names (e.g. Image A, Image B, Image C)
-imL = ["Image 1", "Image 2", "Image 3"]
+imL = ["Image 1", "Image 2", "Image 3", "Image 4", "Image 5"]
 
 # row and column lists (we suggest a 128x128 image)
 # e.g. rowL = [(r0,r1)] where r0 is the lower row and r1 is the higher row of each image
-rowL = [(2377, 2505), (2487, 2615), (2851, 2979)]
-colL = [(1397, 1525), (1397, 1525), (1495, 1623)]
+rowL = [(1637, 1765), (1765, 1893), (2149, 2277), (2405, 2533), (2149, 2277)]
+colL = [(1535, 1663), (1407, 1535), (1279, 1407), (2283, 2411), (2057, 2185)]
 
 # backgound patch paramters (we suggest a 64x64 bkg patch)
 # e.g. bkg_rowL = [(br0,br1)] where br0 is the lower row and br1 is the higher row of each image and are a 'width' apart (br1 - br0 = width)
 width = 64
-bkg_rowL = [(2377, 2441), (2551, 2615), (2915, 2979)]
-bkg_colL = [(1461, 1525), (1461, 1525), (1559, 1623)]
+bkg_rowL = [(1701, 1765), (1765, 1829), (2213, 2277), (2405, 2469), (2213, 2277)]
+bkg_colL = [(1599, 1663), (1471, 1535), (1279, 1343), (2283, 2347), (2121, 2185)]
 
 # OPTIONAL - color limit for each image (set True if you want to manually set the color limit otherwise set False)
 clim_bool = True
-climL = [(0.075,0.45), (0.075,0.45), (0.075,0.45)]
+climL = [(0.03,0.182), (0.038,0.13), (0.038,0.16), (0.03,0.195), (0.035,0.155)]
 
 # Do you want to outline the background patch in the image? (True - Yes, False - No)
 bkg_bool = True
