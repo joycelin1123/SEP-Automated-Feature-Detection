@@ -111,7 +111,6 @@ for num in range (len(imL)):
     plt.title(im)
     plt.ylabel("$Area~[px]$")
     plt.xlabel("$n_I$")
-    plt.yticks(np.arange(0, 120, step=10))
     plt.show()
 
 
