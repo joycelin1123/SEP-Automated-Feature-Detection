@@ -21,5 +21,25 @@ The codes use an FITS data file as an example. The dataset is hst_10325_c7_acs_w
 # Manual
 
 ### sep_bkg_rms.py
+Input: 
+- imL - list for image names
+- rowL - list of tuples of rows for each image e.g. (r0,r1) where r0 is the lower row and r1 is the higher row
+- colL - list of tuples of columns for each image e.g. (c0,c1) where r0 is the lower row and r1 is the higher row
+- width - the size of the background patch 
+- bkg_rowL - list of tuples of rows for each background patch
+- bkg_colL - list of tuples of columns for each background patch
 
+Optional Inputs: 
+- clim_bool - boolean, set True if you want to manually input colorbar limits
+- climL - list of tuples for colorbar limits e.g. (clim0, clim1) where clim0 is the lower limit and clim1 is the higher limit for an image
+- bkg_bool - boolean, set True if you want to see the background patch outlined in the image
+
+Output: 
+- a plot of each image (along with the background patch if bkg_bool = True)
+- printed statements of background and rms values of each image
+- bkgL and rmsL
+
+### sep_fg_graphs.py
+Input:
+- locL - 
 
