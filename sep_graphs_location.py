@@ -2,7 +2,7 @@
 # Run this code first to see what this plot looks like and what is outputted in the terminal
 
 # get the fits info
-filename = "hst_data/CL0024_data/hst_10325_c7_acs_wfc_f475w_drz.fits"
+filename = "hst_10325_c7_acs_wfc_f475w_drz.fits"
 
 # list of image names 
 imL = ["Image 1", "Image 2", "Image 3", "Image 4", "Image 5"]
