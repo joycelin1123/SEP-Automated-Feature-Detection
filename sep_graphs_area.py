@@ -6,7 +6,7 @@
 filename = "hst_data/CL0024_data/hst_10325_c7_acs_wfc_f475w_drz.fits"
 
 # Image names (e.g. Image A, Image B, Image C)
-imL = ["Image 1", "Image 2", "Image 3"]
+imL = ["Image 1", "Image 2", "Image 3", "Image 4", "Image 5"]
 
 # row and column lists (we suggest a 128x128 image)
 # e.g. rowL = [(r0,r1)] where r0 is the lower row and r1 is the higher row of each image
@@ -32,9 +32,9 @@ import sep
 import astropy.io.fits as pyfits
 import matplotlib.pyplot as plt
 
-# check that rowL, colL, bkgL, rmsL, and climL are all the same length
-if (len(rowL)!=len(colL)) or (len(rowL)!=len(bkgL)) or (len(rowL)!=len(rmsL)):
-    print("Your rowL, colL, bkg_rowL, and bkg_colL are not all the same length!")
+# check that imL, rowL, colL, bkgL, rmsL, and climL are all the same length
+if (len(rowL)!=len(colL)) or (len(rowL)!=len(bkgL)) or (len(rowL)!=len(rmsL)) or (len(rowL)!=len(imL)):
+    print("Your imL, rowL, colL, bkg_rowL, and bkg_colL are not all the same length!")
     print(0/0)
 
 # open up the fits file
