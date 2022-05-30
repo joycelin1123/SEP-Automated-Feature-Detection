@@ -3,7 +3,7 @@
 # The first plot corresponds to Figure 6 of the Paper
 
 # get the fits info 
-filename = "hst_10325_c7_acs_wfc_f475w_drz.fits"
+filename = "hst_data/CL0024_data/hst_10325_c7_acs_wfc_f475w_drz.fits"
 
 # Image names (e.g. Image A, Image B, Image C)
 imL = ["Image 1", "Image 2", "Image 3"]
@@ -21,6 +21,8 @@ rmsL = [0.00323042762465775, 0.0031234666239470243, 0.003028792329132557, 0.0035
 n_Lower = 5
 n_Upper = 20
 incr = 1
+# deblend_num is by default 0.005
+deblend_num = 0.005
 
 ### DO NOT EDIT ANYTHING BELOW THIS LINE ###
 ################################################################################
@@ -74,7 +76,7 @@ for num in range (len(imL)):
     for step in range(steps):
         # get the corresponding sigma to the step
         n = n_Lower + (step*incr)
-        objects = sep.extract(data_sub, n, err=rmsL[num], clean = False)
+        objects = sep.extract(data_sub, n, err=rmsL[num], clean = False, deblend_cont = deblend_num)
 
         # loop through all of the objects and add them to the dictionaries
         for i in range(len(objects)):
@@ -112,7 +114,3 @@ for num in range (len(imL)):
     plt.ylabel("$Area~[px]$")
     plt.xlabel("$n_I$")
     plt.show()
-
-
-
-
