@@ -1,7 +1,7 @@
 
 # This example is for Images 1,2,3,4,5 of CL0024
 
-# get the fits info
+# get the fits info using the relative path of the FITS file
 filename = "hst_10325_c7_acs_wfc_f475w_drz.fits"
 
 # Image names (e.g. Image A, Image B, Image C)
