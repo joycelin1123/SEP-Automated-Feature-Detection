@@ -3,7 +3,7 @@
 # Required to run sep_bkg_rms.py first to obtain the bkgL and rmsL
 
 # get the fits info using the relative path of the FITS file (CHANGE THIS)
-filename = "hst_10325_c7_acs_wfc_f475w_drz.fits"
+filename = "data/hst_10325_c7_acs_wfc_f475w_drz.fits"
 
 # write down the image names in order (CHANGE THIS)
 imL = ["Image 1", "Image 2", "Image 3", "Image 4", "Image 5"]
