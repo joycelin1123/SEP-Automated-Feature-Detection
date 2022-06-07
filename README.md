@@ -22,7 +22,7 @@ This Github contains scripts that do the following:
 
 ## Manual
 
-### sep_bkg_rms.py
+### sep_bkg_rms.py (Required to run for other scritps)
 Input: 
 - filename    - relative path of FITS file that you want to use
 - imL         - list for user-defined image names
