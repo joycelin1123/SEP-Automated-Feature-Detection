@@ -3,7 +3,7 @@
 # Required to run sep_bkg_rms.py first to obtain the bkgL and rmsL
 # The first plot corresponds to Figure 6 of the Paper
 
-# get the fits info 
+# get the fits info using the relative path of the FITS file
 filename = "hst_data/CL0024_data/hst_10325_c7_acs_wfc_f475w_drz.fits"
 
 # Image names (e.g. Image A, Image B, Image C)
