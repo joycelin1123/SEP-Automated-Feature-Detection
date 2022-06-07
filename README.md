@@ -31,14 +31,14 @@ Input:
 - width       - the size of the background patch 
 - bkg_rowL    - list of tuples of rows for each background patch
 - bkg_colL    - list of tuples of columns for each background patch
-
-Optional Inputs: 
 - clim_bool   - boolean, set True if you want to manually input colorbar limits
 - climL       - list of tuples for colorbar limits e.g. (clim0, clim1) where clim0 is the lower limit and clim1 is the higher limit for an image
+
+Optional Inputs: 
 - bkg_bool    - boolean, set True if you want to see the background patch outlined in the image
 
 Output: 
-- a plot of each image (along with the background patch if bkg_bool = True)
+- a matplotlib figure of each image (along with the background patch if bkg_bool = True)
 - printed statements of background and rms values of each image
 - bkgL and rmsL
 
@@ -61,10 +61,10 @@ Input:
 - g2_mLL      - list of the most likely values corresponding to each g2 in g2L
 
 Output:
-- plots of the f, g1, and g2 values for each image
+- matplotlib figures of the f, g1, and g2 values for each image
 
-### sep_graphs_area.py
-Input:
+### sep_graphs_area.py 
+Input: (Note: Required to run sep_bkg_rms.py first)
 - filename    - relative path of FITS file that you want to use
 - imL         - list of user-defined image names
 - rowL        - list of tuples of rows for each image e.g. (r0,r1) where r0 is the lower row and r1 is the higher row
@@ -77,10 +77,10 @@ Input:
 - deblend_num - the deblend parameter as defined in SEP (by deafult is 0.005)
 
 Output:
-- a plot of the Area of each detected object vs. $n_I$ for each image with a legend of the peak location of the detected objects
+- a matplotlib figure of the Area of each detected object vs. $n_I$ for each image with a legend of the peak location of the detected objects
 
 ### sep_graphs_location.py
-Input: 
+Input: (Note: Required to run sep_bkg_rms.py first)
 - filename    - relative path of FITS file that you want to use
 - imL         - list of user-defined image names
 - rowL        - list of tuples of rows for each image e.g. (r0,r1) where r0 is the lower row and r1 is the higher row
@@ -93,7 +93,7 @@ Input:
 - deblend_num - the deblend parameter as defined in SEP (by deafult is 0.005)
 
 Output:
-- a plot of the x1 and x2 locations of each object detected vs. $n_I$ for each imagewith a legend of the peak location of the detected objects
+- a matplotlib figure of the x1 and x2 locations of each object detected vs. $n_I$ for each imagewith a legend of the peak location of the detected objects
 
 ### sep_j_graphs.py
 Input:
@@ -108,10 +108,10 @@ Input:
 - j_mLL       - list of the most likely values corresponding to each j in jL
 
 Output:
-- plots of the j values for each image
+- matplotlib figures of the j values for each image
 
 ### sep_3D_location.py
-Input: 
+Input: (Note: Required to run sep_bkg_rms.py first)
 - filename    - relative path of FITS file that you want to use
 - imL         - list of user-defined image names
 - rowL        - list of tuples of rows for each image e.g. (r0,r1) where r0 is the lower row and r1 is the higher row
@@ -124,10 +124,10 @@ Input:
 - deblend_num - the deblend parameter as defined in SEP (by deafult is 0.005)
 
 Output:
-- a 3D plot of the x1 and x2 locations of each object detected for each imagewith a legend of the peak location of the detected objects
+- a 3D matplotlib figure of the x1 and x2 locations of each object detected for each imagewith a legend of the peak location of the detected objects
 
 ### sep_view.py
-Input: 
+Input: (Note: Required to run sep_bkg_rms.py first)
 - filename    - relative path of FITS file that you want to use
 - imL         - list of user-defined image names
 - rowL        - list of tuples of rows for each image e.g. (r0,r1) where r0 is the lower row and r1 is the higher row
@@ -137,12 +137,10 @@ Input:
 - num         - integer that indexes into the list, use to choose which image you want to access
 - n           - signal strength, $n_I$
 - deblend_num - the deblend parameter as defined in SEP (by deafult is 0.005)
-
-Optional Inputs: 
 - clim_bool   - boolean, set True if you want to manually input colorbar limits
 - climL       - list of tuples for colorbar limits e.g. (clim0, clim1) where clim0 is the lower limit and clim1 is the higher limit for an image
 
 Output: 
-- a plot of the selected image with red ellipses plotted around each SEP detected object (magenta point: center point, blue point: peak point)
+- a matplotlib figure of the selected image with red ellipses plotted around each SEP detected object (magenta point: center point, blue point: peak point)
 - printed statements of information of each detected object in the plot (order: (peak, adjPeak, center, adjCenter) where adj stands for adjusted to the actual location in the data array)
 
