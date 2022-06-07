@@ -2,7 +2,7 @@
 # Run this code first to see what this plot looks like and what is output in the terminal
 # Required to run sep_bkg_rms.py first to obtain the bkgL and rmsL
 
-# get the fits info
+# get the fits info using the relative path of the FITS file
 filename = "hst_10325_c7_acs_wfc_f475w_drz.fits"
 
 # list of image names 
