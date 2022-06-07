@@ -1,5 +1,6 @@
 
 # Run this code first to see what this plot looks like
+# Required to run sep_bkg_rms.py first to obtain the bkgL and rmsL
 # The first plot corresponds to Figure 6 of the Paper
 
 # get the fits info 
