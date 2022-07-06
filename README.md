@@ -10,6 +10,8 @@ This repository contains code to detect features using SEP (Sextractor in Python
 
 The codes use an FITS data file as an example. The dataset is "hst_10325_c7_acs_wfc_f475w.fits" and you can download it via Hubble Legacy Archive, https://hla.stsci.edu/hlaview.html (Proposal ID: 10325, PI: Ford, Visit num: c7). 
 
+Link to paper detailing specifics of code: https://arxiv.org/pdf/2207.01630.pdf
+
 ## Contents:
 This Github contains scripts that do the following:
 -   [**`sep_bkg_rms.py`**] - calculates the background and rms value of an image
